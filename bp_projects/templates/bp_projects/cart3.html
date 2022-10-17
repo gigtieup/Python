@@ -1,0 +1,54 @@
+{% set project = "cart3" %}
+{% extends "layouts/welcomebase.html" %}
+{% block body %}
+<div class="position-absolute top-3 end-0">
+  <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg>
+    <p class="text-success">Your order qualifies for FREE Shipping. Choose this option at checkout. See details</p>
+    <h5 class="card-title">Subtotal (0 item): $0.00</h5>
+    <p class="card-text"></p>
+    <input class="form-check-input mt-2" type="checkbox" value=""</div>
+    <a class="btn default" href={{ url_for('projects.wow') }}> This order contains a gift</a>
+  </div>
+  <a class="btn btn-warning" href={{ url_for('projects.cart3') }}>Proceed to checkout</a>
+  </div>
+</div>
+</div>
+</div>
+<div class="px-5 py-5 mx-auto">
+  <h1 class="text-black"><strong></strong></h1>
+  <div class="row">
+<p class="dark-text"><small class="text-muted">Last updated 2 seconds ago</small></p>
+<div class="px-5 py-4 mx-auto">
+  <div class="row">
+<div class="card mb-3" style="max-width: 850px;">
+  <div class="row g-0">
+        <div class="px-1 py-4 mx-auto">
+          <h5 class="card-title">Your Cart is empty.</h5>
+
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="px-5 py-0 mx-auto">
+    <a class="btn btn-warning" href={{ url_for('projects.options') }}>Continue shoping <img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" width="35" height="35" class="d-inline-block align-center" alt=""></a>
+</div>
+{% endblock %}
+{% block background %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDw0NDQ8NDQ0NDQ0NDQ0NDQ8NDw0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0PEisZFRkrKysrKysrKysrKystKysrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKwBJgMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAIhABAQACAAQHAAAAAAAAAAAAAAERIQJBgfEiMVFhcbHw/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO4gAAAlvlrr6KAAAAJICgAAAAAAAAAAAAAAAM8XFZeHEtluLczw6tzfrq0AAAAAAAAAAAAAAAAAAAAAAAAAAAAACZ7qAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJfZQAAAAAgAAAAAAAAAAAAAAAAAACfvlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAJYCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAARQAAAAAAAAAAAAEwoAAAACSqAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXPLW5yzrKgAAAAAAAAAAAAAAAmFAAAAAAAABKoAAAAA//Z');
+}
+</style>
+</head>
+
+</html>
+{% endblock %}

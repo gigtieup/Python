@@ -3,7 +3,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img src="https://images.vexels.com/media/users/3/137401/isolated/preview/00300d00be87848b87d820f2664bc7eb-quora-icon-logo.png" width="50" height="50" class="d-inline-block align-center" alt="">
-    <a class="navbar-brand" href={{ url_for('index') }}>{{basename}}</a>
+    <a class="navbar-brand" href={{ url_for('projects.welcome') }}>{{basename}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,19 +27,15 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
             <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
             <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
-            <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+            <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
             <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
             <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
             <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
-            <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
-            <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
-            <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
-            <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
-            <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
-            <a class="navbar-brand" href={{ url_for('projects.sighnin') }}>Sign in</a>
-            <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+            <a class="navbar-brand">Welcome Quinn!</a>
             <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
             <a class="navbar-brand" href={{ url_for('projects.cart') }}>Cart <img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png" width="35" height="35" class="d-inline-block align-center" alt=""></a>
+            <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+            <a class="navbar-brand" href={{ url_for('index') }}>Sign out</a>
         </div>
     </div>
 </nav>

@@ -6,7 +6,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 -->
 <!DOCTYPE HTML>
 <html lang="en">
-
+{% set Q = "0" %}
 {% set basename = "uinn Elizabeth" %}
 {% set github = "https://github.com/nighthawkcoders" %}
 {% set twitter = "https://twitter.com/NighthawkCoding" %}
@@ -37,7 +37,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 </head>
 
 <body>
-    {% include "layouts/navbar.html" %}
+    {% include "layouts/nuvbar.html" %}
 
     {% block body %}
     {% endblock %}

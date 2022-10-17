@@ -1,18 +1,27 @@
-<!-- Extending the predefined project layout -->
-{% extends "layouts/base.html" %}
+<!-- Extending the project layout, as this file will do minor customizations -->
+{% extends "layouts/project.html" %}
 
-<!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
+<!-- Setting up variables to customize "project" details to be specific to kangaroos -->
+{% set project = "stub" %}
+{% set overview = "https://www.youtube.com/watch?v=qXU-4Dwkv2E" %}
+{% set scrumboard = "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber" %}
+{% set repo = "https://github.com/avabrooks/Python-Web-Portfolio-Series-Demo" %}
+{% set authors = "https://thesmack.nighthawkcodingsociety.com/digitalPortfolios/"  %}
 
-<!- This is a replacement block for Body in base.html -->
-{% block body %}
-    <!- Try building a new body here, bootstrap is a wise choice ->
-    <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Quinn Bireley</strong></h1>
-        <p class="text-secondary">9/14/22</p>
-    </div>
-{% endblock %}
-
-<!- This is turning off birds background from base.html -->
+<!-- Setting up a block replacement to customize background to RINGS -->
 {% block background %}
+<script src="{{ url_for('static', filename='js/three.r119.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/vanta.rings.min.js') }}"></script>
+<script>
+    VANTA.RINGS({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00
+    })
+</script>
 {% endblock %}
