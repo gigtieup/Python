@@ -1,40 +1,37 @@
-.image {
-    background-image: url("https://mydrugs123.web.app/static/media/logo_main_page.7dad9a15.png");
-    background-size: cover;
-    position: relative;
-    height: 500px;
-  }
-  
-  .text {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 10vw; 
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 10px;
-    width: 50%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    mix-blend-mode: screen;
-  }
-  </style>
-  </head>
-  <body>
-  
-  <h2>Responsive Cutout Text Effect</h2>
-  
-  <div class="image">
-    <div class="text">NATURE</div>
-  </div>
-  
-  
-  <p>This example creates a responsive cutout text/knockout text - text that appears cut out on top of a background image.</p>
-  <p>Resize the browser window to see the responsive effect.</p>
-  <p><strong>Note:</strong> This example does not work in Internet Explorer or Edge.</p>
-  
-  </body>
-  </html>
-  {% endblock %}
+{% set project = "wow" %}
+{% extends "layouts/dru.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+
+
+<img class="position-absolute top-50 start-50 translate-middle" src="https://raw.githubusercontent.com/TheOneWhoWill/Mydrugs/Old-Version/src/logos/White%20Logo.png" alt="Paris" style="width:25%;">
+
+</body>
+</html>
+{% endblock %}
+{% block background %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://w0.peakpx.com/wallpaper/375/1008/HD-wallpaper-blackness-black-plain-thumbnail.jpg');
+}
+</style>
+</head>
+
+</html>
+{% endblock %}
