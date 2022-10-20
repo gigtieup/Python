@@ -1,57 +1,42 @@
 <!-- Navigation Bar from bootstrap
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #f1f1f1;
-  color: black;
-}
-
-.navbar a.active {
-  background-color: #353535;
-  color: white;
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-}
-</style>
-</head>
-<body>
-
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">MY DRUG</a>
-  <a href="#contact">Contact</a>
-</div>
-
-</body>
-</html>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <a class="navbar-brand" href={{ url_for('index') }}></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+          <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <img class="dropdown-brand" src="https://raw.githubusercontent.com/TheOneWhoWill/Mydrugs/Old-Version/src/logos/White%20Logo.png" alt="Paris" style="width:5%;">
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.walruses') }}></a></li>
+          <li><a class="dropdown-item" href={{ url_for('projects.hawkers') }}></a></li>
+      </div>
+  </div>
+</nav>
