@@ -61,7 +61,3 @@ def cart2():
 @app_projects.route('/cart3/')
 def cart3():
     return render_template("cart3.html")
-
-    @app_projects.route('/02_API/')
-def API():
-    return render_template("API.md")
