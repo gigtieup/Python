@@ -2,7 +2,7 @@ import random
 
 jokes_data = []
 joke_list = [
-    "What did you think of this product"
+    "What did you think of this product",
     "What did you think of this product",
     "What did you think of this product",
     "What did you think of this product",
