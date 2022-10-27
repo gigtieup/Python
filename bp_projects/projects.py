@@ -61,7 +61,6 @@ def cart2():
 @app_projects.route('/cart3/')
 def cart3():
     return render_template("cart3.html")
-<<<<<<< HEAD
 
 @app_projects.route('/wow/')
 def wow():
@@ -70,5 +69,3 @@ def wow():
 @app_projects.route('/reviews/')
 def reviews():
     return render_template("reviews.html")
-=======
->>>>>>> 987fbf1e5b5e498ccbc112bcdefbc1372b84aa97
