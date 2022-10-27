@@ -1,0 +1,55 @@
+{% set project = "reviews" %}
+{% extends "layouts/cool.html" %}
+{% block body %}
+
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+ 
+td, th {
+  border: 1px solid #6d6d6d;
+  text-align: left;
+  padding: 8px;
+}
+ 
+tr:nth-child(even) {
+  background-color: #616161;
+}
+</style>
+</head>
+<body>
+ 
+<h2>Customer Reviews</h2>
+  
+<table>
+  <tr>
+    <th>Question</th>
+    <th>Image</th>
+    <th>Good</th>
+    <th>Bad</th>
+  </tr>
+  <tr>
+
+
+{% endblock %}
+{% block background %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDw0NDQ8NDQ0NDQ0NDQ0NDQ8NDw0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0PEisZFRkrKysrKysrKysrKystKysrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKwBJgMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAIhABAQACAAQHAAAAAAAAAAAAAAERIQJBgfEiMVFhcbHw/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO4gAAAlvlrr6KAAAAJICgAAAAAAAAAAAAAAAM8XFZeHEtluLczw6tzfrq0AAAAAAAAAAAAAAAAAAAAAAAAAAAAACZ7qAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJfZQAAAAAgAAAAAAAAAAAAAAAAAACfvlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAJYCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAARQAAAAAAAAAAAAEwoAAAACSqAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXPLW5yzrKgAAAAAAAAAAAAAAAmFAAAAAAAABKoAAAAA//Z');
+}
+</style>
+</head>
+
+</html>
+{% endblock %}
