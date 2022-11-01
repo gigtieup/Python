@@ -2,15 +2,17 @@ import random
 
 jokes_data = []
 joke_list = [
-    "What did you think of this product",
+    "What did you think of this product?",
     "What did you think of this product",
     "What did you think of this product",
     "What did you think of this product",
     "What did you think of this product",
     "What did you think of this product",
     "What did you think of this product"
+    "What did you think of our shirts?",
+    "What did you think of our crewnecks?",
+    "What did you think of our shorts?"
 ]
-
 # Initialize jokes
 def initJokes():
     # setup jokes into a dictionary with id, joke, haha, boohoo
