@@ -66,6 +66,10 @@ def cart3():
 def wow():
     return render_template("wow.html")
 
-@app_projects.route('/reviews/')
-def reviews():
-    return render_template("reviews.html")
+@app_projects.route('/sales/')
+def sales():
+    return render_template("sales.html")
+
+@app_projects.route('/pimp/')
+def pimp():
+    return render_template("pimp.html")
