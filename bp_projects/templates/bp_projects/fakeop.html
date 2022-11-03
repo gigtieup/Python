@@ -1,5 +1,5 @@
-{% set project = "options" %}
-{% extends "layouts/cool.html" %}
+{% set project = "fakeop" %}
+{% extends "layouts/fakebace.html" %}
 {% set Q = "0" %}
 {% block body %}
 <html>
@@ -10,7 +10,7 @@
 <body>
     <script type="text/javascript">
 
-    var clicks = 0;
+    var clicks = 2;
     function hello() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
@@ -131,7 +131,7 @@
                          
                       </ol>
                   </p>
-                  <a class="btn btn-outline-dark" href={{ url_for('projects.fakeop') }}>ADD TO CART</a>
+                  <a class="btn btn-outline-dark" onclick="hello()">ADD TO CART</a>
                   </div>
               </div>
           </div>

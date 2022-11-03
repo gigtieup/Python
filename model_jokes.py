@@ -3,7 +3,7 @@ import random
 jokes_data = []
 joke_list = [
     "If you give someone a program... you will frustrate them for a day; if you teach them how to program... you will "
-    "frustrate them for a lietime.",
+    "frustrate them for a lifetime.",
     "Q: Why did I divide sin by tan? A: Just cos.",
     "UNIX is basically a simple operating system... but you have to be a genius to understand the simplicity.",
     "Enter any 11-digit prime number to continue.",
@@ -23,7 +23,6 @@ joke_list = [
     "Q: What is the biggest lie in the entire universe? A: I have read and agree to the Terms and Conditions.",
     'An SQL statement walks into a bar and sees two tables. It approaches, and asks may I join you?'
 ]
-
 # Initialize jokes
 def initJokes():
     # setup jokes into a dictionary with id, joke, haha, boohoo
