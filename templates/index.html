@@ -2,36 +2,219 @@
 {% set project = "Home" %}
 
 {% block body %}
-<h4 class="text-white">-</h4>
-<h4 class="text-white">-</h4>
-<h4 class="text-white">-</h4>
-<h4 class="card-text"></h4>
-<h4 class="card-text"></h4>
-<h4 class="card-text"></h4>
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 60%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 74%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
 <body>
 
-<p>Click on the w3schools logo to download the image:<p>
-
-<a href="https://3d-aspose-app.s3.us-west-2.amazonaws.com/p/c6018409-ed04-4203-aeb7-4fe7b339d185/result?X-Amz-Expires=86400&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4XIV7DNDFPZP23Z5/20221025/us-west-2/s3/aws4_request&X-Amz-Date=20221025T204226Z&X-Amz-SignedHeaders=host&X-Amz-Signature=cf254968fe494babfc30d59fcc384834d394772d2cd6c0cc86016c1bbac26215" download>
-  <img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
-</a>
-
-<p><b>Note:</b> The download attribute is not supported in Edge version 12, IE, Safari 10 (and earlier), or Opera version 12 (and earlier).</p>
-
+<div class="container">
+  <center><img src="https://lh3.googleusercontent.com/DT1gNPvPRy9xEn0e2ic-z9mcJTToB1KoJsV3i8tOzLqG932tQBRwNmzqVd4bwcu6-ZWpJoIlMMYQm197vnvR1A3PeQ5la3LTCdrNy-8ml92GjIONt81pd1j-5kmBxu6MnGD_g5oQiclU2kMPKeGdErEDYF9cIO8sSbcyuIZj9jJ4rofCTvjquwFMA4hpDiIWbkg7zH9IC77z8zjRs21AUXZbotQmL_el2Kn_Dt_KA3JBpxgbff7jlGMI8YKNPbSQ5-ewKU0PBWR1v4nIk5C2RrdYprxHI99lUl420G4ElI56ySNLTU2n-72phIiqwSuCrROLS4_lQ6JI45gB7uHsShO_y7B30SGvyzK61UMC1Nu1JGEdKenFoMPWqBZXoW0OFzSpIHbrVnOpZzxpSxFEDlSsBW9dMnFPjOhoNZ1K9svxTlBteIO9Y_V5LB3kNEGw0LgHUb6y7NgGd2LummRMUopcvqpu_g8EO3zPmM9zt3VZdUj-QgUqg4k1MGfHqP7MyIbCXtNdrxxB2CW8f1VRL9z4fRN2xm_ZW98nij5CPsPnWorzJWiO334yKClCjIS1wUcQCeUc0UntjJBtI8qoQ1QyY5sZBMhUZemqV5LWl4bm52e9kIq-cq5RImhlxMVTVeQkaRNfYTZz4VjlzMc7h2qi9t2Qqk9p5xoDzyo7Mdn79MKhgVSkBQbj5jYZ-wcyAtA7Ag0tqtu5txV3_ud2e0N2E4nlDX69HA4rNxA3faNbz7y6jKYjr8YEDNFhHDE5TY9wI3N2FcWzA05DudkUfGb4Po0J5z8oirW8fKErvHqxyPqtWZOW7yMxupj7ykrIUEvoSHjnGyUZ1GlhGSZk_jgQjTTXKHfQ1-jn_6-GX7wGYzSGWKhAIaNH0jZAtA8PCr5vYsk_FNg6n_ll-C0dJCKjcnFarNsB93oASox8A79KUc40eADgUyG5HJFdGQlCr00lisVIzQSMVbv-ewyl8gymQm7eZrQbAoqQuFjLKKFXviEprE7M=w899-h902-no?authuser=0" alt="Avatar" class="image" width="50" height="50"></center>
+  <div class="middle">
+    <a class="btn large-btn-dark" onclick="document.getElementById('id01').style.display='block'">SIGN IN</a>
+  </div>
+</div>
+  
 </body>
 </html>
-<h4 class="card-text"></h4>
-<h4 class="card-text"></h4>
-<h4 class="card-text"></h4>
-<div class="px-5 py-5 mx-auto">
-  <h1 class="text-white"><strong>Pick from over <strong>100</strong> difrent name brands with Quinn Elizabeth</h1>
-  <h7 class="text-white">
-    Quinn Elizabeth is a global fashion and lifestyle e-retailer committed to making the beauty of fashion accessible to all. We use on-demand manufacturing technology to connect suppliers to our agile supply chain, reducing inventory waste and enabling us to deliver a variety of affordable products to customers around the world. If you have any problems reach the creator at <strong>quinnbireley3.14@gmail.com</strong></strong> </h7>
-</div>
-<div class="d-grid gap-1 col-5 mx-auto">
-<a class="btn btn-outline-light" href={{ url_for('projects.options') }}>Start Shoping</a>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(96, 96, 96);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgb(96, 96, 96);
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(96, 96, 96);
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <center><img src="https://lh3.googleusercontent.com/dH9H74JoFCtGYrp97pNDhoZho3td3J_qc2198dR9VLpuRL6q7zuc56eK_HuU7FzDLJ2_CfXOaxnkyT2XFicD1k7tYq1UkghAYNi59V4fMIwXExqO6dmw7dOF70KIldHewq2_Wkg8KDJK0ZxZnvqq9o66aPBQO5JYOxmADumab1-NgSgCf2K_mU_78l797tttvLmOKYVdQuGyfxbIlnZzSXJoeM87ox8zpUEfYUN5NtVJne73CJ2GmHu6VlaY2IOH1FsGA2ZDKrrZZwUlUbQQhSxWmAhAHheN4ZyMXasxUe-Rb7xnhenJE1J-bFkPEgE1tG4iVmmBwWDhE2qF7GQ-3PEcJUkabaq26Aw1XGPRh93aM5o4DxW2WvxfIRDxL8NYmMuREbbx1xgbNDBK6ezKrmf4q781GC9m7LNYOL1Dd6Uwxt4Et9T2p0xtdhXzxFFrg9R9np8dsHWH9f4aChoqBg3vGEpV0-vGA7pDenxpgfw7CNVmXboARrwfDpjzqb8pED076NgjCRMPo4jFuKJtWQ4Ws8oHc619_91iEy7u1rfrL5Af-SqVKld2OVdjyfSKHSfYh_NK-sDHWeKpul3tKNLgw9d4lfPZz8fVGRQ9e5UF6AU3MamHFSuEX218sEwyqZhBxSMKTrluJkOGUfjhlo4paxjlaQTn3lLSfvaPKXvbcZ5G1DmZVN4EJUCh33nMCdr3vPgX6tK2DjYfmDKwm_6c584KRIEH6hA3hdVk8asgUp6_2kQAdzkDxV39fC6zk5KKVTtxLRsW2CqOgh46YWjWKA40LOEZ2vgKKe25tNAP0FKXXlGLkb_U0IR2fiWk8Qom741wMWXAqknlGaoJVX7bJTetsTUogbsYr8dd9wwlq5SN2bbBKR9MOgnVVU5_6-h3vuHPDCIeK5WqutV5Q7ZvJlNmfcnKxqhmdPU_DCxgdtHxgYSZnpOwvh-LDYnLmKHRZ7uDRKeTtQBs0RGqhP9VpQP1OIIverqJpBnWEon-kYWIkgutCw=w1263-h324-no?authuser=0" width="400" height="100"></center>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <div class="d-grid gap-1 col-5 mx-auto">
+      <a class="btn btn-outline-dark" href={{ url_for('projects.options') }}>Login</a>
+    </div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
 </div>
 
 <script>
