@@ -42,14 +42,6 @@ def co():
 def jew():
     return render_template("jew.html")
 
-@app_projects.route('/sighnin/')
-def sighnin():
-    return render_template("sighnin.html")
-
-@app_projects.route('/welcome/')
-def welcome():
-    return render_template("welcome.html")
-
 @app_projects.route('/cart/')
 def cart():
     return render_template("cart.html")
@@ -69,3 +61,23 @@ def wow():
 @app_projects.route('/reviews/')
 def reviews():
     return render_template("reviews.html")
+
+@app_projects.route('/cart102/')
+def cart102():
+    return render_template("cart102.html")
+
+@app_projects.route('/cart101/')
+def cart101():
+    return render_template("cart101.html")
+
+@app_projects.route('/cart100/')
+def cart100():
+    return render_template("cart100.html")
+    
+@app_projects.route('/fakeop/')
+def fakeop():
+    return render_template("fakeop.html")
+
+@app_projects.route('/welcome/')
+def welcome():
+    return render_template("welcome.html")
